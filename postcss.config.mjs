@@ -6,7 +6,12 @@ import autoprefixer from "autoprefixer";
 
 /** @type {import('postcss-load-config').Config} */
 export default {
-  plugins: [postcssImport(), tailwindcss(), autoprefixer()],
+  plugins: [
+    postcssImport(),
+    tailwindcss(),
+    autoprefixer(),
+    // Add other plugins here
+  ],
 };
 
 // /** @type {import('postcss-load-config').Config} */

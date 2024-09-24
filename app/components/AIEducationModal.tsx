@@ -69,13 +69,15 @@ Experience the future of reading with Picturebooks.ai. Subscribe now and enjoy a
 Artificial intelligence is more than a buzzword; it's a catalyst for change in education. Platforms like Picturebooks.ai demonstrate the tangible benefits of AI, making learning more personalized, engaging, and effective. Don't get left behind—embrace the future of education today.
 `;
 
+interface AIEducationModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
 export default function AIEducationModal({
   isOpen,
   onClose,
-}: {
-  isOpen: boolean;
-  onClose: () => void;
-}) {
+}: AIEducationModalProps) {
   if (!isOpen) return null;
 
   return (

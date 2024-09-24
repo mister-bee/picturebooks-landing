@@ -1,9 +1,35 @@
 // components/Footer.tsx
+"use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response.ok) {
+        alert("Thank you for subscribing!");
+        setEmail("");
+      } else {
+        alert("Subscription failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  };
+
   return (
     <footer id="footer" className="bg-gray-800 text-white py-12">
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-4">
@@ -65,13 +91,15 @@ export default function Footer() {
           <p className="mb-4">
             Subscribe for updates and educational resources.
           </p>
-          <form action="#">
+          <form onSubmit={handleSubmit}>
             <input
               type="email"
               name="email"
               placeholder="Your email address"
               required
               className="p-2 rounded w-full text-black mb-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit" className="btn-secondary px-4 py-2 rounded">
               Subscribe

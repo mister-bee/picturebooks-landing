@@ -2,7 +2,7 @@
 
 export default function AdditionalBenefits() {
   return (
-    <section className="py-16">
+    <section className="py-16 px-4 md:px-8">
       <div className="flex flex-col md:flex-row justify-center items-start md:space-x-16">
         <div className="mb-8 md:mb-0">
           <h3 className="text-2xl font-semibold mb-4">For Teachers</h3>

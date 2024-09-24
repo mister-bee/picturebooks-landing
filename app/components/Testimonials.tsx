@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16">
+    <section id="testimonials" className="py-16 px-4 md:px-8">
       <h2 className="text-3xl font-bold mb-12">
         What Educators and Parents Say
       </h2>

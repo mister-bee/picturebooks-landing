@@ -9,7 +9,7 @@ import {
 
 export default function Features() {
   return (
-    <section id="features" className="bg-gray-50 py-16">
+    <section id="features" className="bg-gray-50 py-16 px-4 md:px-8">
       <h2 className="text-3xl font-bold mb-12">Features</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
         <div className="feature-item">

@@ -1,9 +1,36 @@
 // components/HeroSection.tsx
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
+
+const images = [
+  { src: "/images/bookdream.png", alt: "Children reading a magical book" },
+  { src: "/images/bookdream2.png", alt: "Child exploring a fantasy world" },
+  { src: "/images/bookdream3.png", alt: "Family reading together" },
+];
 
 export default function HeroSection() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () =>
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length),
+    onSwipedRight: () =>
+      setCurrentImage(
+        (prevImage) => (prevImage - 1 + images.length) % images.length
+      ),
+  });
+
   return (
     <header className="flex flex-col-reverse md:flex-row items-center px-8 py-16 bg-gray-50">
       <div className="md:w-1/2 text-center md:text-left">
@@ -21,14 +48,27 @@ export default function HeroSection() {
           Start Your Free Trial
         </Link>
       </div>
-      <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
-        <Image
-          src="/images/bookdream.png"
-          alt="Children reading a magical book"
-          width={500}
-          height={300}
-          className="w-3/4"
-        />
+      <div
+        className="md:w-1/2 mb-8 md:mb-0 flex justify-center relative h-64 md:h-96"
+        {...handlers}
+      >
+        {images.map((image, index) => (
+          <div
+            key={image.src}
+            className={`absolute w-full h-full transition-opacity duration-500 ${
+              index === currentImage ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+              priority={index === 0}
+            />
+          </div>
+        ))}
       </div>
     </header>
   );

@@ -19,7 +19,7 @@ export default function Features() {
           </h3>
           <p>
             Children can see themselves in the stories by customizing
-            characters' appearances.
+            characters&apos; appearances.
           </p>
         </div>
         <div className="feature-item">

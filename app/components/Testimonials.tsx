@@ -24,8 +24,8 @@ export default function Testimonials() {
           <SwiperSlide>
             <div className="testimonial-item text-center px-4">
               <p className="italic mb-4">
-                "PictureBooks.ai has transformed my classroom. My students are
-                more eager to read than ever!"
+                &quot;PictureBooks.ai has transformed my classroom. My students
+                are more eager to read than ever!&quot;
               </p>
               <h4 className="font-semibold">Ms. Thompson</h4>
               <span className="text-gray-600">3rd Grade Teacher</span>
@@ -34,8 +34,8 @@ export default function Testimonials() {
           <SwiperSlide>
             <div className="testimonial-item text-center px-4">
               <p className="italic mb-4">
-                "As a parent, seeing my child so engaged with reading is
-                priceless."
+                &quot;As a parent, seeing my child so engaged with reading is
+                priceless.&quot;
               </p>
               <h4 className="font-semibold">Daniel R.</h4>
               <span className="text-gray-600">Parent</span>
@@ -44,8 +44,8 @@ export default function Testimonials() {
           <SwiperSlide>
             <div className="testimonial-item text-center px-4">
               <p className="italic mb-4">
-                "The personalized stories keep my students motivated and excited
-                to learn."
+                &quot;The personalized stories keep my students motivated and
+                excited to learn.&quot;
               </p>
               <h4 className="font-semibold">Mr. Lee</h4>
               <span className="text-gray-600">Literacy Specialist</span>

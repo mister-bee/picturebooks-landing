@@ -7,7 +7,7 @@ export default function ValueProposition() {
     <section className="text-center py-16">
       <p className="text-lg mb-12 px-4 md:px-0">
         PictureBooks.ai uses cutting-edge AI technology to create personalized
-        picture books tailored to each child's interests and reading level,
+        picture books tailored to each child&apos;s interests and reading level,
         making reading a delightful adventure.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
@@ -15,7 +15,7 @@ export default function ValueProposition() {
           <FaUserEdit className="text-4xl text-orange-500 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Personalized Stories</h3>
           <p>
-            Customized content that resonates with each child's unique
+            Customized content that resonates with each child&apos;s unique
             interests.
           </p>
         </div>
@@ -23,7 +23,8 @@ export default function ValueProposition() {
           <FaBrain className="text-4xl text-orange-500 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Adaptive Learning</h3>
           <p>
-            AI adjusts the complexity to match the student's reading progress.
+            AI adjusts the complexity to match the student&apos;s reading
+            progress.
           </p>
         </div>
         <div className="benefit-item">

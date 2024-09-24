@@ -10,19 +10,21 @@ export const metadata = {
     "Personalized stories that captivate young minds and foster a lifelong passion for reading.",
 };
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
         <div>
-          {/* <header>
+          {/* Uncomment and adjust as needed
+          <header>
             <Image
               src="/images/logo.png"
               alt="PictureBooks.ai Logo"
-              width={100} // Adjust as needed
-              height={50} // Adjust as needed
+              width={100}
+              height={50}
             />
-          </header> */}
+          </header>
+          */}
           <main>{children}</main>
         </div>
       </body>

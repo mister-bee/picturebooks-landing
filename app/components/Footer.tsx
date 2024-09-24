@@ -1,5 +1,6 @@
 // components/Footer.tsx
 
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -13,18 +14,18 @@ export default function Footer() {
             and personalized journey for every child.
           </p>
           <div className="flex space-x-4">
-            <a href="#">
+            <Link href="#" aria-label="Facebook">
               <FaFacebook className="text-2xl" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#" aria-label="Twitter">
               <FaTwitter className="text-2xl" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#" aria-label="Instagram">
               <FaInstagram className="text-2xl" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#" aria-label="LinkedIn">
               <FaLinkedin className="text-2xl" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mb-8 md:mb-0">

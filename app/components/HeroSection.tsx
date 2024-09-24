@@ -1,5 +1,6 @@
 // components/HeroSection.tsx
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -21,9 +22,11 @@ export default function HeroSection() {
         </Link>
       </div>
       <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
-        <img
+        <Image
           src="/images/bookdream.png"
           alt="Children reading a magical book"
+          width={500}
+          height={300}
           className="w-3/4"
         />
       </div>

@@ -73,7 +73,13 @@ To support your efforts in fostering a reading habit, Picturebooks.ai is offerin
 By combining these strategies with the innovative resources available through Picturebooks.ai, you can create a dynamic and supportive reading environment at home. Empower your child with the gift of reading and watch as they embark on countless adventures through the pages of a book.
 `;
 
-export default function ReadingTipsModal({ isOpen, onClose }) {
+export default function ReadingTipsModal({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   if (!isOpen) return null;
 
   return (

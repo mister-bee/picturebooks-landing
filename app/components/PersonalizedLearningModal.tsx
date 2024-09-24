@@ -65,7 +65,13 @@ Subscribe today and get a **7-day free trial**. Experience firsthand how persona
 Personalized reading isn't just a trend; it's a powerful tool that can reshape the way we learn and interact with the world. Embrace the future of reading with Picturebooks.ai and turn every story into a personalized journey of discovery.
 `;
 
-export default function PersonalizedLearningModal({ isOpen, onClose }) {
+export default function PersonalizedLearningModal({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   if (!isOpen) return null;
 
   return (

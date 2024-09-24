@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-4">
         <div className="mb-8 md:mb-0">
           <h3 className="text-xl font-semibold mb-4">About PictureBooks.ai</h3>
-          <p className="mb-4">Let's ignite a love for reading together!</p>
+          <p className="mb-4">Let&apos;s ignite a love for reading together!</p>
           <div className="flex space-x-4">
             <Link href="#" aria-label="Facebook">
               <FaFacebook className="text-2xl" />

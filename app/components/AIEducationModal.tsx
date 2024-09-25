@@ -81,6 +81,20 @@ export default function AIEducationModal({
 }: AIEducationModalProps) {
   if (!isOpen) return null;
 
+  const CustomLink: React.FC<{ href: string; children: React.ReactNode }> = ({
+    href,
+    children,
+  }) => (
+    <a
+      href={href}
+      className="text-blue-600 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
       <div className="bg-white p-8 rounded-lg max-w-3xl max-h-[90vh] overflow-y-auto">
@@ -106,15 +120,7 @@ export default function AIEducationModal({
               <ol className="list-decimal list-inside mb-4" {...props} />
             ),
             li: ({ ...props }) => <li className="mb-2" {...props} />,
-            a: ({ ...props }) => (
-              <a
-                href={props.href}
-                className="text-blue-600 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
-                {...props}
-              />
-            ),
+            a: CustomLink,
             strong: ({ ...props }) => (
               <strong className="font-bold" {...props} />
             ),

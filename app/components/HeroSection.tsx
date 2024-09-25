@@ -6,21 +6,31 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 
-const images = [
-  { src: "/images/bookdream.png", alt: "Children reading a magical book" },
-  { src: "/images/bookdream2.png", alt: "Child exploring a fantasy world" },
-  { src: "/images/bookdream3.png", alt: "Family reading together" },
-];
+interface ImageType {
+  src: string;
+  alt: string;
+}
 
 export default function HeroSection() {
+  const [images, setImages] = useState<ImageType[]>([]);
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    fetch("/api/images")
+      .then((response) => response.json())
+      .then((data) => setImages(data))
+      .catch((error) => console.error("Error fetching images:", error));
   }, []);
+
+  useEffect(() => {
+    if (images.length === 0) return;
+
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images]);
 
   const handlers = useSwipeable({
     onSwipedLeft: () =>

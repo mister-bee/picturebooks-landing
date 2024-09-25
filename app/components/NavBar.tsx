@@ -19,7 +19,7 @@ export default function NavBar() {
       <div className="flex items-center">
         <Link href="/">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.webp"
             alt="PictureBooks.ai Logo"
             width={100}
             height={50}

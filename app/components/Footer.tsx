@@ -75,7 +75,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-orange-500">
+              <a
+                href="https://picturebooks.ai/privacy-policy"
+                className="hover:text-orange-500"
+              >
                 Privacy Policy
               </a>
             </li>
@@ -108,7 +111,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center mt-8 text-gray-400">
-        &copy; 2023 PictureBooks.ai | All rights reserved
+        &copy; 2024 BeechTree.ai | All rights reserved
       </div>
     </footer>
   );

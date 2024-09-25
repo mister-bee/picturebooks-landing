@@ -81,17 +81,16 @@ export default function AIEducationModal({
 }: AIEducationModalProps) {
   if (!isOpen) return null;
 
-  const CustomLink: React.FC<{ href: string; children: React.ReactNode }> = ({
-    href,
-    children,
-  }) => (
+  const CustomLink: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = (
+    props
+  ) => (
     <a
-      href={href}
+      {...props}
       className="text-blue-600 hover:underline"
       target="_blank"
       rel="noopener noreferrer"
     >
-      {children}
+      {props.children}
     </a>
   );
 

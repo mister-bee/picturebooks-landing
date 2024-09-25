@@ -68,8 +68,8 @@ export default function Testimonials() {
           <SwiperSlide>
             <div className="testimonial-item text-center px-4">
               <p className="italic mb-4">
-                &quot;As a librarian, I've seen a significant increase in
-                children's interest in reading since introducing
+                &quot;As a librarian, I&apos;ve seen a significant increase in
+                children&apos;s interest in reading since introducing
                 PictureBooks.ai.&quot;
               </p>
               <h4 className="font-semibold">Lisa K.</h4>

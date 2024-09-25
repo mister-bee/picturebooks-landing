@@ -24,10 +24,10 @@ export default function Features() {
         </div>
         <div className="feature-item">
           <FaHandPointer className="text-4xl text-orange-500 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">Interactive Elements</h3>
+          <h3 className="text-xl font-semibold mb-2">Collect and Share</h3>
           <p>
-            Interactive pages that encourage participation and deepen
-            engagement.
+            Children can collect their favorite stories and characters to share
+            or trade with others, fostering a community of young readers.
           </p>
         </div>
         <div className="feature-item">
@@ -42,8 +42,9 @@ export default function Features() {
           <FaChalkboardTeacher className="text-4xl text-orange-500 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Educator Resources</h3>
           <p>
-            Tools and analytics for teachers and parents to track reading
-            progress.
+            Tools for matching reading levels, tracking comprehension, and
+            supporting vocabulary development to enhance the learning
+            experience.
           </p>
         </div>
       </div>

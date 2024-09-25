@@ -20,7 +20,9 @@ export default function Testimonials() {
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
+          className="pb-12" // Add padding to the bottom of the Swiper
         >
+          {/* Existing testimonials */}
           <SwiperSlide>
             <div className="testimonial-item text-center px-4">
               <p className="italic mb-4">
@@ -49,6 +51,61 @@ export default function Testimonials() {
               </p>
               <h4 className="font-semibold">Mr. Lee</h4>
               <span className="text-gray-600">Literacy Specialist</span>
+            </div>
+          </SwiperSlide>
+
+          {/* New testimonials */}
+          <SwiperSlide>
+            <div className="testimonial-item text-center px-4">
+              <p className="italic mb-4">
+                &quot;PictureBooks.ai has made bedtime stories a magical
+                experience for our family.&quot;
+              </p>
+              <h4 className="font-semibold">Sarah M.</h4>
+              <span className="text-gray-600">Mother of two</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial-item text-center px-4">
+              <p className="italic mb-4">
+                &quot;As a librarian, I've seen a significant increase in
+                children's interest in reading since introducing
+                PictureBooks.ai.&quot;
+              </p>
+              <h4 className="font-semibold">Lisa K.</h4>
+              <span className="text-gray-600">School Librarian</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial-item text-center px-4">
+              <p className="italic mb-4">
+                &quot;The customization options have been a game-changer for my
+                special needs students.&quot;
+              </p>
+              <h4 className="font-semibold">Dr. Martinez</h4>
+              <span className="text-gray-600">
+                Special Education Coordinator
+              </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial-item text-center px-4">
+              <p className="italic mb-4">
+                &quot;PictureBooks.ai has reignited my son's love for reading.
+                It's been incredible to watch.&quot;
+              </p>
+              <h4 className="font-semibold">Michael T.</h4>
+              <span className="text-gray-600">Father</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial-item text-center px-4">
+              <p className="italic mb-4">
+                &quot;The diverse characters and stories have helped foster
+                inclusivity in my classroom.&quot;
+              </p>
+              <h4 className="font-semibold">Ms. Patel</h4>
+              <span className="text-gray-600">4th Grade Teacher</span>
             </div>
           </SwiperSlide>
         </Swiper>

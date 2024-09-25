@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import React from "react";
 
 const markdownContent = `
 # How AI is Shaping the Future of Education

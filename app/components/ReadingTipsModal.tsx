@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import React from "react";
 
 const markdownContent = `
 # Tips to Encourage Reading at Home

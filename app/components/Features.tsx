@@ -1,4 +1,5 @@
 // components/Features.tsx
+import React from "react";
 
 import {
   FaChild,

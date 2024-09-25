@@ -1,5 +1,5 @@
 // components/ValueProposition.tsx
-
+import React from "react";
 import { FaUserEdit, FaBrain, FaImages, FaMobileAlt } from "react-icons/fa";
 
 export default function ValueProposition() {

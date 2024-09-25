@@ -1,5 +1,7 @@
 // app/layout.tsx
 
+import React from "react";
+
 import "./globals.css";
 import { ReactNode } from "react";
 // Remove the next line if Image is not being used

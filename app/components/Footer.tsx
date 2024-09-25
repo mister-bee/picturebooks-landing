@@ -1,6 +1,8 @@
 // components/Footer.tsx
 "use client";
 
+import React from "react";
+
 import { useState } from "react";
 import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";

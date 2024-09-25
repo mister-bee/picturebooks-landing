@@ -1,5 +1,7 @@
 // components/AdditionalBenefits.tsx
 
+import React from "react";
+
 export default function AdditionalBenefits() {
   return (
     <section className="py-16 px-4 md:px-8">

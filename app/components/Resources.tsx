@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-
 import { useState } from "react";
 import PersonalizedLearningModal from "@/app/components/PersonalizedLearningModal";
 import AIEducationModal from "@/app/components/AIEducationModal";
 import ReadingTipsModal from "@/app/components/ReadingTipsModal";
+import { FaBook, FaRobot, FaHome, FaHeart } from "react-icons/fa";
 
 export default function Resources() {
   const [isPersonalizedLearningModalOpen, setIsPersonalizedLearningModalOpen] =
@@ -29,7 +29,7 @@ export default function Resources() {
 
   return (
     <section id="resources" className="bg-gray-50 py-16 px-4 md:px-8">
-      <h2 className="text-3xl font-bold mb-12">Resources</h2>
+      <h2 className="text-3xl font-bold mb-12 text-center">Resources</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {[
           {
@@ -39,6 +39,7 @@ export default function Resources() {
             linkText: "Read More",
             linkStyle: "btn-secondary",
             onClick: () => setIsPersonalizedLearningModalOpen(true),
+            icon: <FaBook className="text-4xl mb-4" />,
           },
           {
             title: "How AI is Shaping the Future of Education",
@@ -46,6 +47,7 @@ export default function Resources() {
             linkText: "Read More",
             linkStyle: "btn-secondary",
             onClick: () => setIsAIEducationModalOpen(true),
+            icon: <FaRobot className="text-4xl mb-4" />,
           },
           {
             title: "Tips to Encourage Reading at Home",
@@ -54,6 +56,7 @@ export default function Resources() {
             linkText: "Read More",
             linkStyle: "btn-secondary",
             onClick: () => setIsReadingTipsModalOpen(true),
+            icon: <FaHome className="text-4xl mb-4" />,
           },
           {
             title: "10 Ways to Foster a Love for Reading",
@@ -61,12 +64,14 @@ export default function Resources() {
             linkText: "Download eBook",
             linkStyle: "btn-primary",
             onClick: handleDownloadEbook,
+            icon: <FaHeart className="text-4xl mb-4" />,
           },
         ].map((item) => (
           <div
             key={item.title}
-            className="resource-item bg-white p-6 rounded shadow-md"
+            className="resource-item bg-white p-6 rounded shadow-md text-center flex flex-col items-center"
           >
+            <div className="flex justify-center mb-4">{item.icon}</div>
             <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
             <p className="mb-4">{item.description}</p>
             <button

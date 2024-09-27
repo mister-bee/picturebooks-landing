@@ -18,18 +18,18 @@ export default function HowItWorks() {
             {
               step: "2",
               title: "Personalize Your Story",
-              description: "Give the gist of the story and illustration style.",
+              description: "Give the character, theme, and illustration style.",
             },
             {
               step: "3",
-              title: "Generate and Read",
-              description: "Let our AI craft a unique story.",
+              title: "Let the magic happen",
+              description: "Watch as our AI story-crafter creates a wonder!",
             },
             {
               step: "4",
               title: "Send to a reader!",
               description:
-                "Post on Google Classroom, or send a link or QR anywhere.",
+                "Print, post a link on Google Classroom, send a QR anywhere!",
             },
           ].map((item) => (
             <div key={item.step} className="text-center">

@@ -62,7 +62,7 @@ export default function HeroSection() {
             fontSize: "clamp(2.5em, 7vw, 5em)",
             fontFamily: "'Paytone One', sans-serif",
             lineHeight: "1.2",
-            paddingBottom: "-1em",
+            paddingBottom: "0.2em",
           }}
         >
           Picture Books

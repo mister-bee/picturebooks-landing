@@ -35,7 +35,7 @@ export default function ChildDataPrivacy() {
             <FaUserSecret className="text-4xl text-orange-500 mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">COPPA Compliant</h3>
             <p>
-              Our practices are fully compliant with the Children's Online
+              Our practices are fully compliant with the Children&apos;s Online
               Privacy Protection Act (COPPA).
             </p>
           </div>

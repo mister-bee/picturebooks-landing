@@ -1,0 +1,30 @@
+.testimonials :global(.swiper-pagination) {
+  bottom: 0 !important;
+}
+
+.testimonials :global(.custom-bullet) {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.2;
+  margin: 0 4px;
+  transition: opacity 0.3s ease;
+}
+
+.testimonials :global(.custom-bullet-active) {
+  opacity: 1;
+}
+
+.testimonials :global(.testimonial-item) {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .testimonials :global(.custom-bullet) {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+  }
+}

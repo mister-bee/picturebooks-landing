@@ -8,10 +8,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import styles from "./Testimonials.module.css";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 px-4 md:px-8">
+    <section
+      id="testimonials"
+      className={`py-16 px-4 md:px-8 ${styles.testimonials}`}
+    >
       <h2 className="text-3xl font-bold mb-12 text-center">
         What Educators and Parents Say
       </h2>
@@ -117,34 +121,6 @@ export default function Testimonials() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <style jsx global>{`
-        .swiper-pagination {
-          bottom: 0 !important; // Align with the bottom of the increased padding
-        }
-        .custom-bullet {
-          width: 8px;
-          height: 8px;
-          display: inline-block;
-          border-radius: 50%;
-          background: #000;
-          opacity: 0.2;
-          margin: 0 4px;
-          transition: opacity 0.3s ease;
-        }
-        .custom-bullet-active {
-          opacity: 1;
-        }
-        @media (min-width: 768px) {
-          .custom-bullet {
-            width: 12px;
-            height: 12px;
-            margin: 0 6px;
-          }
-        }
-        .testimonial-item {
-          padding-bottom: 2rem; // Add space below the text
-        }
-      `}</style>
     </section>
   );
 }

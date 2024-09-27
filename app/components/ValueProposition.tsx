@@ -5,7 +5,7 @@ import { FaUserEdit, FaBrain, FaImages, FaMobileAlt } from "react-icons/fa";
 export default function ValueProposition() {
   return (
     <section className="text-center py-16">
-      <p className="text-lg mb-12 px-4 md:px-0">
+      <p className="text-lg mb-12 px-4 md:px-16 max-w-4xl mx-auto">
         PictureBooks.ai uses cutting-edge AI technology to create personalized
         picture books tailored to each child&apos;s interests and reading level,
         making reading a delightful adventure.

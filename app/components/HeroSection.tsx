@@ -47,11 +47,11 @@ export default function HeroSection() {
     <header className="flex flex-col-reverse md:flex-row items-center px-4 md:px-8 py-8 md:py-16 bg-gray-50">
       <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-          Ignite a Love for Reading with AI-Powered Picture Books
+          PictureBooks.ai
         </h1>
         <p className="text-base md:text-lg mb-6 text-gray-600">
-          Personalized stories that captivate young minds and foster a lifelong
-          passion for reading.
+          Ignite a love of reading with personalized stories that captivate
+          young minds and foster a lifelong passion for learning.
         </p>
         <Link
           href="https://picturebooks.ai"

@@ -11,16 +11,15 @@ import {
 export default function Features() {
   return (
     <section id="features" className="bg-gray-50 py-16 px-4 md:px-8">
-      <h2 className="text-3xl font-bold mb-12">Features</h2>
+      <h2 className="text-3xl font-bold mb-12 text-center">Features</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
         <div className="feature-item">
           <FaChild className="text-4xl text-orange-500 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2">
-            Customizable Characters
-          </h3>
+          <h3 className="text-xl font-semibold mb-2">Safe Personalization</h3>
           <p>
-            Children can see themselves in the stories by customizing
-            characters&apos; appearances.
+            Create personalized characters, settings, and genres with 100%
+            child-safe content, allowing children to see themselves in their own
+            unique stories.
           </p>
         </div>
         <div className="feature-item">
@@ -28,15 +27,17 @@ export default function Features() {
           <h3 className="text-xl font-semibold mb-2">Collect and Share</h3>
           <p>
             Children can collect their favorite stories and characters to share
-            or trade with others, fostering a community of young readers.
+            or trade with others, fostering a community of young readers. Some
+            stories are so wonderful, you can even print them out as special
+            gifts!
           </p>
         </div>
         <div className="feature-item">
           <FaLanguage className="text-4xl text-orange-500 mx-auto mb-4" />
           <h3 className="text-xl font-semibold mb-2">Multilingual Support</h3>
           <p>
-            Available in multiple languages to support diverse learning
-            environments.
+            Available in 25+ languages to support diverse learning environments
+            and foster global literacy.
           </p>
         </div>
         <div className="feature-item">

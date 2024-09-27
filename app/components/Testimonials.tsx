@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 export default function Testimonials() {
   return (
     <section id="testimonials" className="py-16 px-4 md:px-8">
-      <h2 className="text-3xl font-bold mb-12">
+      <h2 className="text-3xl font-bold mb-12 text-center">
         What Educators and Parents Say
       </h2>
       <div className="w-full md:w-2/3 mx-auto">
@@ -22,7 +22,7 @@ export default function Testimonials() {
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
-          className="pb-12" // Add padding to the bottom of the Swiper
+          className="pb-20" // Increased bottom padding from pb-16 to pb-20
         >
           {/* Existing testimonials */}
           <SwiperSlide>

@@ -12,12 +12,13 @@ export default function HowItWorks() {
             {
               step: "1",
               title: "Sign Up for Free",
-              description: "Create an account in minutes.",
+              description:
+                "Create an account in minutes. No credit card required.",
             },
             {
               step: "2",
               title: "Personalize Your Story",
-              description: "Input interests and select preferences.",
+              description: "Give the gist of the story and illustration style.",
             },
             {
               step: "3",
@@ -26,8 +27,9 @@ export default function HowItWorks() {
             },
             {
               step: "4",
-              title: "Track Progress",
-              description: "Use our tools to monitor engagement and growth.",
+              title: "Send to a reader!",
+              description:
+                "Post on Google Classroom, or send a link or QR anywhere.",
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
@@ -39,8 +41,11 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
-        <div className="mt-8">
-          <a href="#" className="btn-primary px-6 py-3 rounded">
+        <div className="mt-8 text-center">
+          <a
+            href="https://picturebooks.ai"
+            className="btn-primary px-6 py-3 rounded inline-block"
+          >
             Create Your First Story
           </a>
         </div>

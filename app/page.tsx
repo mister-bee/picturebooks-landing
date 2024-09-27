@@ -11,6 +11,7 @@ import VideoSection from "./components/VideoSection"; // Add this line
 import AdditionalBenefits from "./components/AdditionalBenefits";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
+import ChildDataPrivacy from "./components/ChildDataPrivacy";
 
 export default function HomePage() {
   return (
@@ -21,7 +22,8 @@ export default function HomePage() {
       <Features />
       <Testimonials />
       <HowItWorks />
-      <VideoSection /> {/* Add this line */}
+      <VideoSection />
+      <ChildDataPrivacy /> {/* Add this line */}
       <AdditionalBenefits />
       <Resources />
       <Footer />

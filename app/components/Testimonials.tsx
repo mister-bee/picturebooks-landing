@@ -15,14 +15,19 @@ export default function Testimonials() {
       <h2 className="text-3xl font-bold mb-12 text-center">
         What Educators and Parents Say
       </h2>
-      <div className="w-full md:w-2/3 mx-auto">
+      <div className="w-full md:w-2/3 mx-auto relative">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
           autoplay={{ delay: 5000 }}
-          pagination={{ clickable: true }}
-          className="pb-20" // Increased bottom padding from pb-16 to pb-20
+          pagination={{
+            clickable: true,
+            bulletClass: "swiper-pagination-bullet custom-bullet",
+            bulletActiveClass:
+              "swiper-pagination-bullet-active custom-bullet-active",
+          }}
+          className="pb-12 md:pb-24" // Adjusted padding for mobile and desktop
         >
           {/* Existing testimonials */}
           <SwiperSlide>
@@ -112,6 +117,34 @@ export default function Testimonials() {
           </SwiperSlide>
         </Swiper>
       </div>
+      <style jsx global>{`
+        .swiper-pagination {
+          bottom: 0 !important; // Align with the bottom of the increased padding
+        }
+        .custom-bullet {
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          border-radius: 50%;
+          background: #000;
+          opacity: 0.2;
+          margin: 0 4px;
+          transition: opacity 0.3s ease;
+        }
+        .custom-bullet-active {
+          opacity: 1;
+        }
+        @media (min-width: 768px) {
+          .custom-bullet {
+            width: 12px;
+            height: 12px;
+            margin: 0 6px;
+          }
+        }
+        .testimonial-item {
+          padding-bottom: 2rem; // Add space below the text
+        }
+      `}</style>
     </section>
   );
 }

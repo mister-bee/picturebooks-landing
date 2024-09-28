@@ -37,23 +37,26 @@ export default function Footer() {
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-orange-500">
                   About Us
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="hover:text-orange-500">
                   Pricing
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="hover:text-orange-500">
                   FAQs
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="#" className="hover:text-orange-500">
+                <a
+                  href="https://picturebooks.ai/contact"
+                  className="hover:text-orange-500"
+                >
                   Contact Support
                 </a>
               </li>
@@ -66,7 +69,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-500">
+                <a
+                  href="https://picturebooks.ai/terms-of-service"
+                  className="hover:text-orange-500"
+                >
                   Terms of Service
                 </a>
               </li>
@@ -74,8 +80,14 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-            <p>Email: info@picturebooks.ai</p>
-            <p>Phone: (123) 456-7890</p>
+
+            <a
+              href="https://picturebooks.ai/contact"
+              className="hover:text-orange-500"
+            >
+              Send a Message
+            </a>
+            <p>Email: admin@picturebooks.ai</p>
           </div>
         </div>
         <div className="text-center mt-8 pt-8 border-t border-gray-700">

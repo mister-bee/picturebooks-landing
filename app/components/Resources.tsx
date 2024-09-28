@@ -29,7 +29,7 @@ export default function Resources() {
 
   return (
     <section id="resources" className="bg-gray-50 py-16 px-4 md:px-8">
-      <h2 className="text-3xl font-bold mb-12 text-center">Resources</h2>
+      <h2 className="text-4xl font-bold mb-6 text-center">Resources</h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {[
           {

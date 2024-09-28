@@ -6,7 +6,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-gray-50 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">How It Works</h2>
+        <h2 className="text-4xl font-bold mb-6 text-center">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-4 md:px-0">
           {[
             {
@@ -29,7 +29,7 @@ export default function HowItWorks() {
               step: "4",
               title: "Send to a reader!",
               description:
-                "Print, post a link on Google Classroom, send a QR anywhere!",
+                "Print, post a link on Google Classroom, or send a QR code anywhere.",
             },
           ].map((item) => (
             <div key={item.step} className="text-center">

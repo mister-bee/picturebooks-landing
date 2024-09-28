@@ -69,7 +69,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-base md:text-lg mb-6 text-gray-600">
           Ignite a love of reading with personalized stories that captivate
-          young minds and fostering a lifelong passion for learning.
+          young minds and foster a lifelong passion for learning.
         </p>
         <div className="flex justify-center md:justify-start">
           <Link

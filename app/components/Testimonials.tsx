@@ -16,7 +16,7 @@ export default function Testimonials() {
       id="testimonials"
       className={`py-16 px-4 md:px-8 ${styles.testimonials}`}
     >
-      <h2 className="text-3xl font-bold mb-12 text-center">
+      <h2 className="text-4xl font-bold mb-6 text-center">
         What Educators and Parents Say
       </h2>
       <div className="w-full md:w-2/3 mx-auto relative">

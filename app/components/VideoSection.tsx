@@ -23,7 +23,7 @@ const VideoSection: React.FC = () => {
   return (
     <section className="bg-gray-50 py-16 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">
+        <h2 className="text-4xl font-bold mb-6 text-center">
           Podcast on Fostering a Love of Reading
         </h2>
         <div className="flex flex-col items-center">

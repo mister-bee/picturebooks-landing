@@ -87,7 +87,7 @@ export default function Footer() {
             >
               Send a Message
             </a>
-            <p>Email: admin@picturebooks.ai</p>
+            <p>Email: admin@beechtree.ai</p>
           </div>
         </div>
         <div className="text-center mt-8 pt-8 border-t border-gray-700">

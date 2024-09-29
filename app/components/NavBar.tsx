@@ -23,7 +23,7 @@ export default function NavBar() {
           <Image
             src="/images/logo.webp"
             alt="PictureBooks.ai Logo"
-            width={100}
+            width={70}
             height={50}
           />
         </Link>

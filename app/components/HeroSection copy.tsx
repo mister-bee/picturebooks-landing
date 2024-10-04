@@ -1,7 +1,7 @@
 // components/HeroSection.tsx
 "use client";
 
-import React, { useState, useEffect, useMemo, useCallback } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -40,14 +40,11 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, [shuffledImages]);
 
-  const goToNextImage = useCallback(() => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % shuffledImages.length
-    );
-  }, [shuffledImages.length]);
-
   const handlers = useSwipeable({
-    onSwipedLeft: goToNextImage,
+    onSwipedLeft: () =>
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % shuffledImages.length
+      ),
     onSwipedRight: () =>
       setCurrentImageIndex(
         (prevIndex) =>
@@ -86,8 +83,6 @@ export default function HeroSection() {
       <div
         className="w-full md:w-1/2 mb-4 md:mb-0 flex justify-center hero-image-container"
         {...handlers}
-        onClick={goToNextImage}
-        style={{ cursor: "pointer" }}
       >
         {shuffledImages.map((image, index) => (
           <div

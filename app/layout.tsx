@@ -6,6 +6,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 // Remove the next line if Image is not being used
 // import Image from "next/image";
+// test
 
 export const metadata = {
   title: "PictureBooks.ai - Ignite a Love for Reading",
